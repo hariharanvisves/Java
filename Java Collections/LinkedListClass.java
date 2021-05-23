@@ -104,11 +104,16 @@ public class LinkedListClass {
 
         //  Getting size of the LinkedList
         int length = list.size();
+        System.out.println();
 
         // Converting list to array
-        String[] arr = list.toArray(new String[0]);
+        String[] arr = list.toArray(new String[list.size()]);    // String[] arr = list.toArray(new String[list.size()]);
         for(int i = 0; i < arr.length; i++) {
             System.out.println(arr[i]);
+        }
+        LinkedList<String> arrlist = new LinkedList<>();
+        for(String s:arr) {
+            arrlist.add(s);
         }
 
         // Iterator<String> itr = list.iterator();
@@ -119,7 +124,8 @@ public class LinkedListClass {
         // for(String s : list) {
         //     System.out.println(s);
         // }
-
+        System.out.println();
+    
         students stu = new students(25,"Hari",21);
         LinkedList<students> liststu = new LinkedList<students>();
         liststu.add(stu);

@@ -254,5 +254,17 @@ public class ArrayListClass {
         System.out.println(lists.isEmpty());
         lists.add("Hai");
         System.out.println(lists.isEmpty());
+
+        // Converting ArrayList to Array
+        String[] arr = list.toArray(new String[0]);  // String[] arr = list.toArray(new String[list.size()]);
+        for(String s : arr) {
+            System.out.println(s);
+        }
+
+        // Converting Array to ArrayList
+        ArrayList<String> arrlist = new ArrayList<>();
+        for(String s:arr) {
+            arrlist.add(s);
+        }
     }
 }
