@@ -102,6 +102,9 @@ public class LinkedListClass {
         }
         System.out.println();
 
+        //  Getting size of the LinkedList
+        int length = list.size();
+
         // Converting list to array
         String[] arr = list.toArray(new String[0]);
         for(int i = 0; i < arr.length; i++) {
