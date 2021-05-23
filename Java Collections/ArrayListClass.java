@@ -145,6 +145,9 @@ public class ArrayListClass {
         Collections.sort(listint);
         Collections.sort(list);
 
+        //  Getting size of the ArrayList
+        int length = list.size();
+
         // User-defined class objects in Java ArrayList
         ArrayList<Student> stud = new ArrayList<>();
         // Method 1 : By creating objects to Student class 
